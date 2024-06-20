@@ -4,6 +4,4 @@ st.text("This app will help you to check whether the degree sequence is graphica
 st.text("if yes it will show you the graph of it")
 user_input = st.text_input("enter degree sequence seperated by comma")
 
-for i in user_input:
-  print(i)
 
