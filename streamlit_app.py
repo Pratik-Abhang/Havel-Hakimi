@@ -4,9 +4,10 @@ st.text("This app will help you to check whether the degree sequence is graphica
 st.text("if yes it will show you the graph of it")
 user_input = st.text_input("enter degree sequence seperated by comma")
 user_str = user_input.replace(',', '')
-user = int(user_str)
+user_str = user_str.split()
 seq = []
-seq = user.split(" ")
+for i in user_str:
+    seq.append(user_str)
 
 import networkx as nx
 import matplotlib.pyplot as plt
