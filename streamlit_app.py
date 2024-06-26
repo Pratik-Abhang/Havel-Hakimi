@@ -5,9 +5,9 @@ st.text("if yes it will show you the graph of it")
 user_input = st.text_input("enter degree sequence seperated by comma")
 user_str = user_input.replace(',', '')
 user_str = user_str.split()
-seq = []
+deg_seq = []
 for i in user_str:
-    seq.append(user_str)
+    deg_seq.append(user_str)
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -41,7 +41,7 @@ def plot_graph(deg_seq):
         plt.show()
 
 if st.button("Apply"):
-  plot_graph(seq)
+  plot_graph(deg_seq)
 
 
 
